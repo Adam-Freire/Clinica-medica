@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+   
+    background-color: #fff;
+    font-family:'Source Sans Pro', sans-serif ;
+}
+
+.cabecalho{
+    background-color: #00cad1;
+    width:100%;
+}
+
+.cabecalho-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho-container img{
+    height: 60px;
+    padding: 0 10px;
+}
+
+.links-topo a{
+    padding: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links-topo a:hover{
+    color: #004b4c;
+}
+
+.tamanho-maximo{
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+@media (max-width: 425px) {
+    .cabecalho-conteudo{
+        flex-direction: column;
+    }
+    .links-topo {
+        width: 100%;
+        border-top: 1px solid #72777D ;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+
+    }
+
+    .conteudo-container-sobre img{
+        display: none;        
+    }
+
+    
+}
+
+/* conteudo principal */
+
+.conteudo-titulo{
+    position: relative;
+    background-image: url(../assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px; 
+    margin: 0 auto;
+
+}
+
+.conteudo-titulo-escrito{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+     
+}
+.conteudo-titulo-escrito h1{
+    font-weight: 300;
+    font-size: 43px;
+    text-transform: uppercase;
+}
+
+/* conteudo sobre */
+
+.conteudo-sobre{
+    text-align: center;
+    color: #72777D;
+    
+}
+.conteudo-container{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteudo-container-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.conteudo-sobre-escrito{
+    color: #72777D;
+    font-weight: 500;
+}
+
+.conteudo-sobre-escrito h3{
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.conteudo-container-sobre img{
+    height: 250px;
+}
+
+/* conteudo especialidades */
+
+.especialidades-escrito{
+    color: #72777D;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 10px;
+
+}
+
+.especialidades-imagens{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.especialidades-container{
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px)
+}
+
+.especialidades img{
+    width: 100%;
+}
+
+
+
+.especialidades-container figcaption{
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.especialidades-link{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.especialidades-botao{
+    background-color:#00cad1;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;    
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* conteudo contato */
+.conteudo-contato{
+    color: #72777D;
+    font-weight: 500;
+    margin-top: 30px;
+
+}
+.localizacao iframe{
+    padding: 10px;
+}
+
+.rodape{
+    background-color: #0C6E71;
+    width: 100%;
+    text-align: center;
+    padding:30px;
+    margin-top: 30px ;
+    color: #fff;
+}
+
+.conteudo-rodape img{
+    height:60px ;    
+}
+
+.conteudo-rodape  {
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    .conteudo-titulo{
+        height: 400px;
+    }
+    .conteudo-titulo-escrito h1{
+        font-size: 34px;
+        font-weight: 500;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .conteudo-titulo{
+        height: 300px;
+    }
+    .conteudo-titulo-escrito h1{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .conteudo-container-sobre img{
+        display: none;        
+    }
+
+    .especialidades-imagens{
+        justify-content: center;
+    }
+    .especialidades-container{
+        width: calc(100% / 2 - 40px);
+    }
+
+}
+
+@media (max-width: 425px) {
+    
+    .conteudo-titulo{
+        height: 200px;
+    }
+    .conteudo-titulo-escrito h1{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .especialidades-container{
+        width: 100%;
+        }
+    
+}
